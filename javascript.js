@@ -45,7 +45,7 @@ function renderParty() {
     li.innerHTML = `
       <h2>${party.name}</h2>
       <p> ${party.description}</p>
-      <p>${party.date}</p>
+      <p>${new Date(party.date)}</p>
       <p> ${party.location}</p>
       <button onclick="deleteParty(${party.id})">Delete</button>
     `;
